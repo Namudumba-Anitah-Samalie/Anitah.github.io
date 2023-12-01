@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <h2>Arithmetic Operators</h2>
+    <script>
+        let a=10;
+        let b=5;
+        console.log(a+b);// output:15--->Addition
+        console.log(a-b);// output:5--->Subtraction
+        console.log(a*b);// output:50--->Multiplication
+        console.log(a/b);// output:2--->Division
+        console.log(a%b);// output:0--->Remainder(because 10 divide by 5 has no remainder)
+    </script>
+    <h2>Comparison Operators</h2>
+    <script>
+        let x=7;
+        let y=9;
+        console.log(x==y);// output:false-->Equal to
+        console.log(x|=y);// outpu:true-->Not equal to
+        console.log(x>y);// output:false-->Greater than
+        console.log(x<y);// output:true-->Less than
+    </script>
+    <h2>Logical Operators</h2>
+    <script>
+        let hasMoney=true;
+        let hasTime=false;
+        console.log(hasMoney&&hasTime);// output:false--->And(both conditions must be true)
+        console.log(hasMoney||hasTime);// output:true--->Or(atleast one condition must be true)
+        console.log(hasMoney|hasTime);// output:false--->Not(inverts the truthfulness of the variable)
+    </script>
+    <h2>Assignment Operators</h2>
+    <script>
+        let z=10;
+        console.log(z=5); // z is now 5--->Assign a value
+        console.log(z+=3); // z is now 8--->Add and assign(z=z+3)
+        console.log(z-=2); // z is now 6--->Subtract and assign(z=z-2)
+    </script>
+    <h2>Conditionals</h2>
+    <script>
+         let isRaining = true;
+         if (isRaining) {
+            console.log("Take an umbrella.");
+         } else {
+            console.log("Wear sunglasses.")
+         }
+    </script>
+    <h2>Switch Statement</h2>
+    <script>
+        let weather="windy";
+        switch(weather){
+        case"sunny":
+        console.log("Wear sunglasses.");
+        break;
+        case"rainy":
+        console.log("Take an umbrella.");
+        break;
+        case"windy":
+        console.log("Wear a windbreaker.");
+        break;
+        default:
+        console.log("Dress normally.");
+        }
+    </script>
+    <h2>For Loop</h2>
+    <script>
+        for(let I=1; I<=5;1++){
+        console.log(I);
+     }
+    </script>
+    <h2>While Loop</h2>
+    <script>
+    let biscuitinjar=5;
+    while(biscuitinjar>0){
+        console.log("Eating a biscuit...");
+        bsciutinjar--;//update
+    }
+    console.log("Jar is now empty.")
+    </script>
+    <h2>Do while Loop</h2>
+    <script>
+    let episodesWatched=0;
+    do{
+        console.log("Watching an episode---");
+        episodesWatched++;
+        let userfeedback=prompt;("Do you want to watch another episode?(yes/no)");
+    } while(userfeedback==="yes");
+    console.log("Total episodes watched:$(episodesWatched)");
+    </script>
+    <h1>ASSIGNMENT</h1>
+    <script>
+    let number = prompt("10");
+    if(number%2===0){
+        console.log("Even Steven");
+    } else {
+        console.log("Odd Todd")
+    }
+    </script>
+    <script>
+    for(leti=1;i<=10;i++){
+        console.log(i);
+    }
+    </script>
+    <script>
+    let  userweather=sunny;
+    switch(userweather){
+        case "sunny":
+        console.log("Wear a hat.");
+        break;
+        case "rainy":
+        console.log("Take an umbrella.");
+        break;
+        case "windy":
+        console.log("Wear a windbreaker.");
+        break;
+        default:
+        console.log("Dress normally.");
+    } 
+    </script>
+    <script>
+    let playgame=true;
+    while(playgame){
+    console.log("Playing...");
+    let userResponse=prompt("Do you want to continue playing?(yes to continue)");
+    if(userResponse!=="yes"){
+        playGame=false;
+    }
+    }
+    console.log("Game over");
+    </script>
+    <h2>Functions</h2>
+    <p>Functions without parameters</p>
+    <script>
+    function greet() {
+        console.log("Hello World");
+    }
+    </script>
+    <p>Functions without parameters and these need to be called plus they have arguments</p>
+    <script>
+    function name(params) {
+        
+    }
+    </script>
+    <h2>Parameters</h2>
+    <script>
+    function addNumbers(a,b) {
+    return a+b;
+    }
+    let sum=addNumbers(5,3);  //sum will now be 8
+    </script>
+    <h2>Lab Exercise</h2>
+    <script>
+    function personalGreeting(name,age) {
+        return "Hello, "+ name + "! You are " + age +"years old.";
+    }
+    let greeting = personalGreeting("Anitah",20);
+    console.log(greeting);
+    </script>
+    <h2>Assignment</h2>
+    <h3>number one</h3>
+    <script>
+    function calculateArea(length = 1, width = 1) {
+    return length * width;
+    }
+    //Test the function with different values
+    const area1 = calculateArea(2,3);
+    console.log("Area 1:{area1}");
+    const area2 = calculateArea(4,5);
+    console.log("Area 2:{area2}");
+    const area3 = calculateArea(6,7);
+    console.log("Area 3:{area3}");
+    </script>
+    <h3>number two</h3>
+    <script>
+    function fahrenheitToCelcius(temperature) {
+    return (temperature-32) *(5/9);
+    }
+    //Test the function with different values
+    const temperature1 = 
+    </script>
+    <h3>number three</h3>
+    <script>
+    function isEven(number =2) {
+    return  
+    }
+    </script>
+    <h3>number four</h3>    
+    <script></script>
+<objects>
+ const person = {
+    firstName="Anitah",
+    lastName="Samalie",
+    age=25,
+ } 
+ console.log(firstName):Anitah;
+ console.log(lastName):Samlie;
+ console.log(age):25;
+ let person={
+    firstName="Alex",
+    lastName="Jesse",
+    age=25,
+    address:"Arua",
+    isEmployed:'true',
+    getfullName:function{
+        console.log("MyNameIs"+this.firstName+"Alex"+this.lastName+"jesse")
+    }
+    newaddress:function{
+        this.address=Kampala;
+    }
+    displayDetails:function{
+        console.log($(this.fullName)$(this.age)$(this.address))
+    }
+ }  
+ let mobilePhone={
+    brand:"wiko",
+    model:"110",
+    battery life:"5000mAh",
+    storage:"64GB",
+    isOn:"false",
+    memory:"32GB",
+    turnOn:function() {
+        this.isOn=true;
+    }
+    turnOff:function(){
+        this.isOn=false;
+}
+    displayInfo:function(){
+        console.log($(this.brand)$(this.model)$(battery life)$(this.storage)ROM$(this.memory)RAM$(this.turnOff)false$(this turnOn)true);
+    }
+ }
+ let book={
+    title:"Wasted Beauty",
+    author:"Jane Austen",
+    pages:"210",
+    genre:"inspirational",
+    bookmark page:"",
+    isRead:"false",
+    read:function(){
+        this.isRead=true;
+    }
+    displatSummary:funstion(){
+        console.log($(this.title)$(this.author)$(this.genre))
+    }
+ }
+ let bankAccount={
+    accountHolder:"Anitah",
+    currentBalance:"300000UGX",
+    accountType:"fixed",
+    deposit:"400000UGX",
+    wihdraw:"200000UGX",
+    deposit:function{
+        this.
+    }
+    withdraw:function{
+
+    }
+    displayBalance:function{
+        console.log($(this.currentBalance))
+    }
+ }
+</objects>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+</html>
